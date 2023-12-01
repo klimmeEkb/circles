@@ -12,7 +12,8 @@ class Example(QWidget):
 
     def initUI(self):
         self.setWindowTitle('Круги на полях')
-        self.button = des(QPushButton(self))
+        self.button = QPushButton(self)
+        des(self.button)
         self.do_paint = False
         self.button.clicked.connect(self.paint)
 
